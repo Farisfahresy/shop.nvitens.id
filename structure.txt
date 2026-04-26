@@ -1,0 +1,17 @@
+/
+├── .htaccess                 # Routing Pintar (Front Controller)
+├── index.php                 # Main Router & Authentication Handler
+├── database.sql              # Skema Database & Superadmin Default
+├── config/
+│   ├── database.php          # Koneksi PDO
+│   └── .htaccess             # Deny from all
+├── core/
+│   ├── security.php          # CSRF, XSS, Secure Upload Validation
+│   └── .htaccess             # Deny from all
+├── uploads/
+│   └── .htaccess             # Anti-Malware (php_flag engine off)
+└── views/
+    ├── landing.php           # Landing Page SaaS & Portal
+    ├── superadmin.php        # Modul Superadmin
+    ├── tenant_admin.php      # Dashboard Tenant, POS & Pengaturan
+    └── tenant_shop.php       # Storefront Customer (Katalog & Checkout)
